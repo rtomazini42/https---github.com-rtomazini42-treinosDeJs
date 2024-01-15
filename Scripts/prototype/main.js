@@ -43,3 +43,17 @@ class Moto{
 
 const motoNova = new Moto('biz', 'aaa-1111');
 motoNova.andar();
+
+//uma terceira forma de objetos
+
+
+const lapisDeCor = {
+    material: 'grafiti'
+}
+
+const NovoLapis = Object.create(lapisDeCor);
+
+NovoLapis.cor = 'azul';
+
+console.log(NovoLapis.material);
+console.log(NovoLapis);
